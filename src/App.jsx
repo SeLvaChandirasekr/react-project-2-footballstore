@@ -14,7 +14,7 @@ function App() {
    
        // Using useEffect instead of useLayoutEffect for fetching data
        useLayoutEffect(() => {
-        fetch("http://localhost:5173/products.json")
+        fetch("https://splendorous-crepe-3dde6e.netlify.app/products.json")
           .then((response) => response.json())
           .then((result) => {
             if (result.data.length > 0) {
